@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея дикої природи</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: #4a7c59;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card .caption {
+      padding: 15px;
+      font-size: 1.1em;
+      text-align: center;
+      background: #f6f6f6;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .card .caption {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Галерея дикої природи</h1>
+  </header>
+
+  <main class="gallery">
+    <div class="card">
+      <img src="https://i.postimg.cc/DSZ0GcJb/grizzly-bear-WW199558-1.png" alt="Grizzly Bear">
+      <div class="caption">Грізлі — могутній мешканець північних лісів</div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.postimg.cc/rKgzzHmk/Lion-waiting-in-Namibia.png" alt="Lion">
+      <div class="caption">Лев у Намібії — король савани у засідці</div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.postimg.cc/zVqVzNq7/motion-array-1479067-az2wlioz-J0-high-0008.png" alt="Leopard">
+      <div class="caption">Раб білий — різновид рабів, дорожчий за чорних </div>
+    </div>
+  </main>
+
+</body>
+</html>
